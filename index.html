@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shivansh Mehta — Software Engineer, AI Researcher, and M.S. CS student at Georgia Tech. Explore my portfolio, experience, and skills." />
+  <meta name="author" content="Shivansh Mehta" />
+  <title>Shivansh Mehta — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Cursor Glow Effect -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">SM</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <div class="hero-photo-wrapper reveal">
+        <div class="hero-photo-ring"></div>
+        <div class="hero-photo">
+          <img src="Photo.jpeg" alt="Shivansh Mehta" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');" />
+          <span class="photo-placeholder-text">SM</span>
+        </div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-greeting reveal">Hello, I'm</p>
+        <h1 class="hero-name reveal">Shivansh Mehta</h1>
+        <p class="hero-title reveal">Software Engineer · AI Enthusiast · Researcher</p>
+        <p class="hero-subtitle reveal">M.S. Computer Science @ Georgia Tech &nbsp;|&nbsp; Specializing in HCI &amp; AI</p>
+        <div class="hero-cta reveal">
+          <a href="#contact" class="btn btn-primary">Get in Touch</a>
+          <a href="#experience" class="btn btn-secondary">View My Work</a>
+        </div>
+        <div class="hero-socials reveal">
+          <a href="https://www.linkedin.com/in/shivansh-mehta-765822230" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="mailto:shivmehta207@gmail.com" aria-label="Email" class="social-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+          <a href="tel:470-699-6450" aria-label="Phone" class="social-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-heading reveal">
+        <span class="section-number">01</span>
+        About Me
+      </h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm currently pursuing a <strong>Master of Science in Computer Science</strong> at <strong>Georgia Institute of Technology</strong>, focusing on <strong>Human-Computer Interaction</strong> and expanding my expertise in AI and intelligent systems.
+          </p>
+          <p>
+            A proud <strong>UCLA graduate</strong> with a B.S. in Cognitive Science and a specialization in Computer Science, I bring a unique interdisciplinary lens — grounded in physics, mathematics, and psychology — to every problem I tackle.
+          </p>
+          <p>
+            For over two years, I've worked full-time as a <strong>Software Engineer at Keysight Technologies</strong>, contributing to impactful projects in software development, user design, and data analysis. My academic and professional journey has honed my skills in programming, system design, and cross-functional collaboration.
+          </p>
+          <p>
+            Outside of work, I'm a relentless learner — pursuing advanced coursework in machine learning and deep learning. I'm passionate about building intelligent systems and applying technology to solve real-world problems.
+          </p>
+        </div>
+        <div class="about-highlights reveal">
+          <div class="highlight-card">
+            <span class="highlight-number">2+</span>
+            <span class="highlight-label">Years Professional Experience</span>
+          </div>
+          <div class="highlight-card">
+            <span class="highlight-number">3.72</span>
+            <span class="highlight-label">GPA at UCLA</span>
+          </div>
+          <div class="highlight-card">
+            <span class="highlight-number">15+</span>
+            <span class="highlight-label">Programming Languages</span>
+          </div>
+          <div class="highlight-card">
+            <span class="highlight-number">∞</span>
+            <span class="highlight-label">Curiosity &amp; Drive</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <h2 class="section-heading reveal">
+        <span class="section-number">02</span>
+        Experience &amp; Projects
+      </h2>
+      <div class="timeline">
+        <!-- 1 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Software Engineer</h3>
+                <p class="timeline-company">Keysight Technologies &nbsp;·&nbsp; Colorado Springs, CO</p>
+              </div>
+              <span class="timeline-date">Jan 2024 — Present</span>
+            </div>
+            <ul class="timeline-details">
+              <li>Engineered, optimized, and maintained multiple mission-critical web services to meet evolving user requirements</li>
+              <li>Enhanced and modernized existing applications and user interfaces, increasing performance and usability</li>
+              <li>Streamlined cloud data operations, reducing data usage costs for B2B apps by <strong>200%</strong></li>
+              <li>Collaborated in agile scrum teams using Jira and BitBucket to deliver high-quality, scalable solutions ahead of deadlines</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Next.js</span><span>TypeScript</span><span>Tailwind</span><span>AWS</span><span>Snowflake</span><span>Jira</span>
+            </div>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Software Design Engineer Intern</h3>
+                <p class="timeline-company">Keysight Technologies &nbsp;·&nbsp; Colorado Springs, CO</p>
+              </div>
+              <span class="timeline-date">Jun 2023 — Dec 2023</span>
+            </div>
+            <ul class="timeline-details">
+              <li>Developed crucial frontend features on a business-to-business app with Next.js, TypeScript, and Tailwind</li>
+              <li>Spearheaded human resources app with intern group using React, Django, Docker, SQL, Oracle, and Postgres</li>
+              <li>Designed and deployed a recommendation engine in AWS and Snowflake with an intern cohort</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>React</span><span>Django</span><span>Docker</span><span>SQL</span><span>Oracle</span><span>Postgres</span>
+            </div>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Research Assistant</h3>
+                <p class="timeline-company">Computational Vision &amp; Learning Lab &nbsp;·&nbsp; Los Angeles, CA</p>
+              </div>
+              <span class="timeline-date">Nov 2022 — Jun 2023</span>
+            </div>
+            <ul class="timeline-details">
+              <li>Utilized PsychoPy, Python, and NumPy to develop deep-learning models and popular ML algorithms</li>
+              <li>Created computational models that accurately predicted behavioral outcomes in vision-based cognitive tasks</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Python</span><span>NumPy</span><span>PsychoPy</span><span>Deep Learning</span>
+            </div>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>BruinEats — Full-Stack Project</h3>
+                <p class="timeline-company">Personal Project &nbsp;·&nbsp; UCLA</p>
+              </div>
+              <span class="timeline-date">Jan 2022 — Mar 2022</span>
+            </div>
+            <ul class="timeline-details">
+              <li>Designed and deployed a food review platform for UCLA students on Google Firebase</li>
+              <li>Integrated responsive UI and dynamic data handling for seamless mobile and desktop experiences</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Firebase</span><span>JavaScript</span><span>Responsive Design</span>
+            </div>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>President — Science National Honors Society</h3>
+                <p class="timeline-company">Leadership</p>
+              </div>
+              <span class="timeline-date">Aug 2019 — May 2020</span>
+            </div>
+            <ul class="timeline-details">
+              <li>Directed all events, excursions, and financial operations, increasing participation by <strong>30%</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section" id="education">
+    <div class="container">
+      <h2 class="section-heading reveal">
+        <span class="section-number">03</span>
+        Education
+      </h2>
+      <div class="education-grid">
+        <div class="edu-card reveal">
+          <div class="edu-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0 0-1.844L12.72 5.14a2 2 0 0 0-1.44 0L2.58 9.078a1 1 0 0 0 0 1.844l8.7 3.938a2 2 0 0 0 1.44 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+          </div>
+          <h3>Georgia Institute of Technology</h3>
+          <p class="edu-degree">M.S. in Computer Science</p>
+          <p class="edu-date">Aug 2025 — Expected Aug 2027</p>
+          <ul class="edu-details">
+            <li>Specialization in Human-Computer Interaction</li>
+            <li>Focus: Machine &amp; Deep Learning, AI, Advanced Algorithms, UI/UX Design</li>
+          </ul>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0 0-1.844L12.72 5.14a2 2 0 0 0-1.44 0L2.58 9.078a1 1 0 0 0 0 1.844l8.7 3.938a2 2 0 0 0 1.44 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+          </div>
+          <h3>University of California, Los Angeles</h3>
+          <p class="edu-degree">B.S. in Cognitive Science · GPA: 3.72 / 4.0</p>
+          <p class="edu-date">Graduated Dec 2023</p>
+          <ul class="edu-details">
+            <li>Concentration in Computer &amp; Data Science</li>
+            <li>Coursework: OS, DSA, AI, OOP, Discrete Math, Software Construction, UI/UX</li>
+            <li>Member — Upsilon Lab &amp; CVL Laboratory</li>
+            <li>Dean's List at UCLA, GSU, and GTC · AP Scholar with Distinction</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-heading reveal">
+        <span class="section-number">04</span>
+        Skills &amp; Tools
+      </h2>
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            Programming
+          </h3>
+          <div class="skill-tags">
+            <span>Python</span><span>JavaScript</span><span>TypeScript</span><span>C</span><span>C++</span><span>R</span><span>Lua</span><span>HTML</span><span>CSS</span><span>Celery</span><span>Redis</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+            Libraries &amp; Frameworks
+          </h3>
+          <div class="skill-tags">
+            <span>React</span><span>Next.js</span><span>Django</span><span>NumPy</span><span>PsychoPy</span><span>JavaFX</span><span>Docker</span><span>MATLAB</span><span>AWS</span><span>Tailwind</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+            Databases
+          </h3>
+          <div class="skill-tags">
+            <span>MySQL</span><span>PostgreSQL</span><span>Snowflake</span><span>Oracle</span><span>Firebase</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z"/></svg>
+            Design &amp; Productivity
+          </h3>
+          <div class="skill-tags">
+            <span>Tableau</span><span>Power BI</span><span>WordPress</span><span>Jitterbit</span><span>Breve</span><span>Microsoft Office</span><span>Google Suite</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            Systems &amp; DevOps
+          </h3>
+          <div class="skill-tags">
+            <span>Git</span><span>GitHub</span><span>Bitbucket</span><span>Confluence</span><span>Jira</span><span>VS Code</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m2 12 20 0"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            Languages
+          </h3>
+          <div class="skill-tags">
+            <span>English — Advanced</span><span>Hindi — Basic</span><span>Gujarati — Basic</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <h2 class="section-heading reveal">
+        <span class="section-number">05</span>
+        Certifications
+      </h2>
+      <div class="cert-grid">
+        <div class="cert-card reveal">
+          <div class="cert-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12"/><circle cx="12" cy="8" r="7"/></svg>
+          </div>
+          <h4>AI A–Z 2025: Agentic AI, Gen AI &amp; RL</h4>
+          <p>Udemy &nbsp;·&nbsp; Aug 2025</p>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12"/><circle cx="12" cy="8" r="7"/></svg>
+          </div>
+          <h4>Executive Briefing: AI + ChatGPT</h4>
+          <p>Udemy &nbsp;·&nbsp; Jul 2025</p>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12"/><circle cx="12" cy="8" r="7"/></svg>
+          </div>
+          <h4>Machine Learning for Beginners – Level 1</h4>
+          <p>Udemy &nbsp;·&nbsp; Jan 2025</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section section-alt" id="contact">
+    <div class="container contact-container">
+      <h2 class="section-heading reveal">
+        <span class="section-number">06</span>
+        Let's Connect
+      </h2>
+      <p class="contact-text reveal">
+        I'm always open to new opportunities, collaborations, or just a good conversation about tech and innovation. Feel free to reach out!
+      </p>
+      <div class="contact-cards reveal">
+        <a href="mailto:shivmehta207@gmail.com" class="contact-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          <span>shivmehta207@gmail.com</span>
+        </a>
+        <a href="tel:470-699-6450" class="contact-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>470-699-6450</span>
+        </a>
+        <a href="https://www.linkedin.com/in/shivansh-mehta-765822230" target="_blank" rel="noopener" class="contact-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          <span>LinkedIn Profile</span>
+        </a>
+        <span class="contact-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Atlanta, GA</span>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>&copy; 2026 Shivansh Mehta. Crafted with care.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
