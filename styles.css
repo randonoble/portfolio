@@ -461,6 +461,7 @@ body:hover .cursor-glow { opacity: 1; }
 }
 .contact-card:hover { border-color: var(--accent); transform: translateY(-3px); }
 .contact-card svg { flex-shrink: 0; color: var(--accent); }
+.contact-card span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
 
 /* === FOOTER === */
 .footer {
@@ -491,6 +492,8 @@ body:hover .cursor-glow { opacity: 1; }
   :root { --section-py: 5rem; }
   .hero-content { flex-direction: column; text-align: center; gap: 2.5rem; }
   .hero-cta, .hero-socials { justify-content: center; }
+  .scroll-indicator { display: none; }
+  .hero { padding-bottom: 3rem; }
   .about-grid { grid-template-columns: 1fr; }
   .nav-links {
     position: fixed; top: 0; right: 0;
